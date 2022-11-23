@@ -32,5 +32,37 @@
         @endif
 
         <h2>{{ $nome }} tem {{ $idade }} anos e exerce a profissão de {{ $profissao }}.</h2>
+
+        <!-- Comentário HTML comum que você consegue ver -->
+
+        @for($i = 0; $i < count($arr); $i++)
+            @if($arr[$i] % 2 == 0)
+            <p>{{ $arr[$i] }} - {{ $i }} - É par</p>
+            @else
+                <p>{{ $arr[$i] }} - {{ $i }}</p>
+            @endif
+        @endfor
+
+        <h3>Lista de Classificação</h3>
+
+        <ol>
+        @foreach($nomes as $nome)
+            <li>{{ $nome }} - {{ $loop->index }}</li>
+        @endforeach 
+        </ol>
+
+        {{-- Essse comentário aqui é sobre a regra de negócio, manolo. Não vaza, não! --}}
+
+        <h2>
+
+            @php 
+
+            $name = "Gustavo";
+
+            echo $name;
+
+            @endphp
+
+        </h2>
     </body>
 </html>
