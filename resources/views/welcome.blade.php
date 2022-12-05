@@ -6,17 +6,14 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/scripts.js"></script>
     </head>
     <body>
         <h1>Algum Título</h1>
+
+        <img src="/img/banner.jpg" alt="Banner">
+
         @if(10 > 15)
         <p>A condição é true</p>
         @endif
