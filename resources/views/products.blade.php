@@ -5,4 +5,7 @@
 
 @section('content')
         <h1>Tela de Produtos</h1>
+        @if($busca != null)
+            <h2>Você buscou por: {{$busca}}</h2>
+        @endif
 @endsection
